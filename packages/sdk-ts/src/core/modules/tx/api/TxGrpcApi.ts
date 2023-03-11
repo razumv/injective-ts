@@ -182,7 +182,7 @@ export class TxGrpcApi implements TxConcreteApi {
   ): Promise<TxResponse> {
     const { txService } = this
     const { mode, timeout } = options || {
-      mode: BroadcastMode.BROADCAST_MODE_SYNC,
+      mode: BroadcastMode.BROADCAST_MODE_BLOCK,
       timeout: DEFAULT_TX_BLOCK_INCLUSION_TIMEOUT_IN_MS || 60000,
     }
 
